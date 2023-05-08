@@ -1,0 +1,25 @@
+﻿<h1>SpectaclesAndTheirActors_UsingModel</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>sTitle</th>
+            <th>sGenre</th>
+            <th>sDate</th>
+            <th>sLieu</th>
+            <th>aName</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td>@i.sTitle</td>
+                <td>@i.sGenre</td>
+                <td>@i.sDate</td>
+                <td>@i.sLieu</td>
+                <td>@i.aName</td>
+            </tr>
+        }
+    </tbody>
+</table>
